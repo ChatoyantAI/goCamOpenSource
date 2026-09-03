@@ -12,6 +12,8 @@ namespace AvsFactory {
 
 				instance.ui.StartButton.onClick(() => {
 
+					instance.entity.VerificationStepGlobal.termsAndConditionAgreement = instance.ui.TermsAndConditionsCheckbox.isChecked();
+
 					if (!instance.entity.VerificationStepGlobal.termsAndConditionAgreement) {
 						alert('Please agree with the terms and conditions first');
 						return;

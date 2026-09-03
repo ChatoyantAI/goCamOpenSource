@@ -2000,6 +2000,7 @@ var AvsFactory;
                     StartPage.Method.setScreenOrientation();
                 });
                 StartPage.instance.ui.StartButton.onClick(function () {
+                    StartPage.instance.entity.VerificationStepGlobal.termsAndConditionAgreement = StartPage.instance.ui.TermsAndConditionsCheckbox.isChecked();
                     if (!StartPage.instance.entity.VerificationStepGlobal.termsAndConditionAgreement) {
                         alert('Please agree with the terms and conditions first');
                         return;

@@ -23191,6 +23191,7 @@ var Avs;
                     this.element.prop('checked', false);
                 };
                 CheckboxInput.prototype.isChecked = function () {
+                    this.states.value = this.element.is(':checked');
                     return this.states.value;
                 };
                 CheckboxInput.prototype.setLabelValue = function (value) {

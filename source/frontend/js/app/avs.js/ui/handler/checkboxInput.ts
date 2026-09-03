@@ -43,6 +43,7 @@ namespace Avs {
 				}
 
 				public isChecked() {
+					this.states.value = this.element.is(':checked');
 					return this.states.value;
 				}
 
